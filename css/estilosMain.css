@@ -9,15 +9,33 @@ body {
     margin: 0;
 }
 
-h1{
- display:flex;
- justify-content:center;
-}
-img{
-    width:50%;
-    height:80%;
-}
-
+h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  img {
+    width: 50%;
+    height: 90%;
+    position: relative;
+    animation: moveDiagonal 2s ease-in-out infinite;
+  }
+  
+  @keyframes moveDiagonal {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(-100px, 100px); /* Ajusta la distancia diagonal de movimiento */
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  
+  
+  
 .boton{
     padding: 10px 25px;
     font-size: 18px;
@@ -33,4 +51,6 @@ img{
  margin-left:40%;
    width:20%;
 }
+
+
 
