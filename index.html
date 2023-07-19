@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>KILL_RAT.EXE</title>
 
     <link rel="shortcut icon" href="jpgs/RAT1.jpg" type="image/x-icon">
 
     <link rel="stylesheet" href="css/estilosMain.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
 
 
-    <audio autoplay controls loop>
-        <source src="aud/intro.mp3" >
-    </audio>
 
     <h1 class="titulo"><img src="jpgs/name.png" class="animated-image" alt="Nombre de la imagen"></h1>
 
 
 
-    <a class="boton" href="./intruccuines.html">MATAR RATAS!!!  START</a>
-        
+    <a class="boton" href="./intruccuines.html">MATAR RATAS!!! START</a>
+    <script>
+        let audio = new Audio("./aud/intro.mp3");
+        audio.setAttribute('loop', true);
+        document.onmousedown = () => {document.onmousedown = null, audio.play(); };
+    </script>
 </body>
+
 </html>
- s
