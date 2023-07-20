@@ -24,12 +24,16 @@
 
 
 
-    <a class="boton" href="./intruccuines.html">MATAR RATAS!!! START</a>
+    <div class="pixelated-container">
+        <a href="intruccuines.html" class="pixelated-link">MATAR RATAS!!!</a>
+      </div>
+
+
     <script>
         let audio = new Audio("./aud/intro.mp3");
         audio.setAttribute('loop', true);
         document.onmousedown = () => {document.onmousedown = null, audio.play(); };
     </script>
+    
 </body>
-
 </html>
