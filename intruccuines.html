@@ -7,73 +7,90 @@
     <title>INSTRUCCIONES.EXE</title>
     <link rel="shortcut icon" href="jpgs/signal.png" type="image/x-icon">
 
-    <style>
-       body {
-    background-image: url('./jpgs/waneella-pixel-art.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
-}
-
-h1{
- display:flex;
- justify-content:center;
- color: while;
-}
-img{
-    width:50%;
-    height:80%;
-}
-
-.BACK{
-    float: right;
-    padding: 10px 25px;
-    font-size: 18px;
-    background-color: #ee0000;
-    color: #fac71e;
-   text-decoration: none;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
-    margin-top:10%;
- margin-left:40%;
-   width:20%;
-}
-
-
-.GAME{
-    float: left;
-    padding: 10px 25px;
-    font-size: 18px;
-    background-color: #ee0000;
-    color: #fac71e;
-   text-decoration: none;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    border-style: groove;
-    border-color: rgb(0, 0, 0);
-    margin-top:10%;
- margin-left:40%;
-   width:20%;
-}
-
-
-    </style>
+  
 </head>
 <body>
-    
+    <div class="contenido">
     <audio autoplay controls loop >
         <source src="aud/op2.m4a">
     </audio>
+    <img src="jpgs/loading.png" >
+ 
+    <div class="BACK"><a  href="./index.html">REGRESAR</a></div>
+    <div class="GAME"><a  href="./nivel1.html">JUGAR</a></div>
 
-    <h1>INSTRUCCIONES</h1>
-    <a class="BACK" href="./index.html">REGRESAR</a>
-    <a class="GAME" href="./game.html">JUGAR</a>
+</div>
+    <style>
+audio{
+    display: none;
+}
+
+img{
+    position: absolute;
+    width: 100%;
+    height:99%;
+    margin-top: -1%;
+    margin-left: -1%;
+    z-index: -1;
+    
+}
+
+    body {
+    height: 100%;
+
+    background-color: black;
+ }
+ .contenido{
+
+    width: 100%;
+    height: 100%;
+ }
+ 
+ 
+ .BACK{
+     position: absolute;
+     top: 93vh;
+     width: 10vh;
+     height: 5vh;
+ }
+ .GAME {
+     position: absolute;
+     top: 93vh;
+    left: 92%;
+     width: 10vh;
+     height: 5vh;
+    }
+
+ .BACK a{
+     padding: 10px 25px;
+     font-size: 18px;
+     background-color: #ee0000;
+     color: #fac71e;
+     text-decoration: none;
+     margin: none;
+     border-radius: 15px;
+     cursor: pointer;
+     border-style: groove;
+     border-color: rgb(0, 0, 0);
+     position: relative;
+ 
+ }
+ 
+ 
+ .GAME a{
+     padding: 10px 25px;
+     font-size: 18px;
+     background-color: #ee0000;
+     color: #fac71e;
+    text-decoration: none;
+  margin: none;
+     border-radius: 15px;
+     cursor: pointer;
+     border-style: groove;
+     border-color: rgb(0, 0, 0);
+ }
+ 
+ 
+     </style>
 </body>
 </html>

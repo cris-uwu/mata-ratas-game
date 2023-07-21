@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>LEVEL_2.EXE</title>
+   <link rel="shortcut icon" href="jpgs/signal.png" type="image/x-icon" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+
+    <div class="contenido">
+      <audio autoplay controls loop>
+        <source src="aud/Wind.mp3" >
+      </audio>
+
+
+      <div class="BACK" id="regresar"><a  href="./intruccuines.html">REGRESAR</a></div>
+      <div class="personaje" id="prota"><img src="jpgs/prota.png"></div>
+      <div id="alerta"><img src="jpgs/signal.png"></div>
+      <div class="personaje" id="enemigo"><img src="jpgs/enemy2.png"></div>
+      <div class="rafaga" id="rafaga"><img src="./jpgs/rafaga.gif"></div>
+      <script type="text/javascript" src="js/codigo2.js"></script>
+    </div>
+    
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="Ventana">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ventanaTitulo">Resumen..</h5>
+            </div>
+            <div class="modal-body" id="modalBody"></div>
+             <div class="modal-footer" id="modalFooter">
+                
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    <style>
+        body {
+          background-image: url("./jpgs/back.gif");
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          margin: none;
+        }
+
+ .BACK{
+    display:none;
+     position: absolute;
+     top: 93vh;
+     width: 10vh;
+     height: 5vh;
+ }
+
+.rafaga{
+  display: none;
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+.rafaga img{
+  width: 100%;
+  height: 100%;
+}
+
+
+ .BACK a{
+     padding: 10px 25px;
+     font-size: 18px;
+     background-color: #ee0000;
+     color: #fac71e;
+     text-decoration: none;
+     margin: none;
+     border-radius: 15px;
+     cursor: pointer;
+     border-style: groove;
+     border-color: rgb(0, 0, 0);
+     position: relative;
+ 
+ }
+
+        audio {
+          display: none;
+        }
+        .contenido {
+          width: 100%;
+          height: 100%;
+        }
+        
+      #prota{
+        position: absolute;
+          height: 50%;
+          width: 20%;
+          top: 50%;
+          left: 20%;
+  
+      }
+      
+      #enemigo{
+        position: absolute;
+          height: 60%;
+          width: 25%;
+          top: 40%;
+          left: 70%;
+      }
+      
+  
+      #alerta{
+        display: none;
+          position: absolute;
+          top: 30%;
+          left: 45%;
+      }
+      #alerta img{
+
+          width: 50%;
+      }
+      #prota img{
+          height: 100%;
+          width: 100%;
+      }
+      #enemigo img{
+  height: 100%;
+  width: 100%;
+      }
+      </style>
+  </body>
+</html>
